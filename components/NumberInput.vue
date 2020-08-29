@@ -2,7 +2,7 @@
   <div id="main">
     <h1>Application Test</h1>
       <div v-for="(value,index) in listOfNumbers" v-bind:key="index">
-      <input type="Number"  v-model="value.number"  @change="onChange()"  ><br>
+      <input type="Number"  v-model="value.number"  @change="onChange()" min="1" max="10" ><br>
       </div>
       <button @click="addInput()">{{sum}}</button><br>
       </div>
@@ -54,6 +54,7 @@ input {
   border: 1px double rgb(102, 97, 96) ;
   border-radius: 4px;
    text-align: center;
+   width: 380px;
 }
 button {
  font-size: 30px;
